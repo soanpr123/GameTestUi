@@ -1,0 +1,900 @@
+﻿[
+  {
+    "id": 0,
+    "name": "Người rơm",
+    "type": 0,
+    "speed": 0,
+    "level": 0,
+    "hp": 5,
+    "rangeMove": 0,
+    "imgs": [
+      7,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      9
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 1,
+    "name": "Hổ nanh kiếm",
+    "type": 1,
+    "speed": 1,
+    "level": 2,
+    "hp": 100,
+    "rangeMove": 50,
+    "imgs": [
+      316,
+      317,
+      318,
+      319,
+      320,
+      321,
+      322,
+      323,
+      324
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 2,
+    "name": "Sói hoang",
+    "type": 1,
+    "speed": 1,
+    "level": 3,
+    "hp": 200,
+    "rangeMove": 75,
+    "imgs": [
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      368
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 3,
+    "name": "Khủng long con",
+    "type": 2,
+    "speed": 1,
+    "level": 4,
+    "hp": 200,
+    "rangeMove": 50,
+    "imgs": [
+      369,
+      370,
+      371,
+      372,
+      373,
+      374,
+      375,
+      376,
+      377
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 4,
+    "name": "Khủng long",
+    "type": 2,
+    "speed": 1,
+    "level": 5,
+    "hp": 300,
+    "rangeMove": 50,
+    "imgs": [
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      394,
+      395
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 5,
+    "name": "Quỷ Oolong",
+    "type": 1,
+    "speed": 1,
+    "level": 6,
+    "hp": 300,
+    "rangeMove": 100,
+    "imgs": [
+      396,
+      397,
+      398,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 6,
+    "name": "Lính tai thỏ",
+    "type": 1,
+    "speed": 1,
+    "level": 4,
+    "hp": 300,
+    "rangeMove": 50,
+    "imgs": [
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      384,
+      385,
+      386
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 7,
+    "name": "Trung úy tai thỏ",
+    "type": 1,
+    "speed": 1,
+    "level": 7,
+    "hp": 300,
+    "rangeMove": 100,
+    "imgs": [
+      405,
+      406,
+      407,
+      408,
+      409,
+      410,
+      411,
+      412,
+      413
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 8,
+    "name": "Giran con",
+    "type": 1,
+    "speed": 1,
+    "level": 12,
+    "hp": 300,
+    "rangeMove": 100,
+    "imgs": [
+      450,
+      451,
+      452,
+      453,
+      454,
+      455,
+      456,
+      457,
+      458
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 9,
+    "name": "Giran bố",
+    "type": 1,
+    "speed": 1,
+    "level": 11,
+    "hp": 300,
+    "rangeMove": 100,
+    "imgs": [
+      441,
+      442,
+      443,
+      444,
+      445,
+      446,
+      447,
+      448,
+      449
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+      "id": 10,
+      "name": "Khủng long bay",
+      "type": 2,
+      "speed": 1,
+      "level": 15,
+      "hp": 1200,
+      "rangeMove": 50,
+      "imgs": [
+        741,
+        742,
+        743,
+        744,
+        745,
+        746,
+        747,
+        748,
+        749
+      ],
+      "dart": {
+        "dx": 0,
+        "dy": 0,
+        "startDarts": [],
+        "midDarts": [
+          289,
+          290
+        ],
+        "endDarts": []
+      }
+    },
+  {
+    "id": 11,
+    "name": "Gấu tướng cướp",
+    "type": 1,
+    "speed": 1,
+    "level": 9,
+    "hp": 300,
+    "rangeMove": 100,
+    "imgs": [
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+
+
+
+  {
+    "id": 12,
+    "name": "Heo con",
+    "type": 1,
+    "speed": 1,
+    "level": 9,
+    "hp": 300,
+    "rangeMove": 100,
+    "imgs": [
+      3063,
+      3064,
+      3065,
+      3066,
+      3067,
+      3068,
+      3069,
+      3070,
+      3071
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 13,
+    "name": "Heo rừng - Con này chưa có ảnh",
+    "type": 1,
+    "speed": 1,
+    "level": 9,
+    "hp": 300,
+    "rangeMove": 100,
+    "imgs": [
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+
+
+
+
+
+
+
+  {
+    "id": 14,
+    "name": "Robot Pilaf",
+    "type": 1,
+    "speed": 1,
+    "level": 8,
+    "hp": 300,
+    "rangeMove": 75,
+    "imgs": [
+      414,
+      415,
+      416,
+      417,
+      418,
+      419,
+      420,
+      421,
+      422
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 15,
+    "name": "Robot bay",
+    "type": 2,
+    "speed": 1,
+    "level": 15,
+    "hp": 1200,
+    "rangeMove": 50,
+    "imgs": [
+      732,
+      733,
+      734,
+      735,
+      736,
+      737,
+      738,
+      739,
+      740
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 16,
+    "name": "Lính hà mã",
+    "type": 1,
+    "speed": 1,
+    "level": 15,
+    "hp": 1200,
+    "rangeMove": 50,
+    "imgs": [
+      3036,
+      3037,
+      3038,
+      3039,
+      3040,
+      3041,
+      3042,
+      3043,
+      3044
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 17,
+    "name": "Lính khỉ đột",
+    "type": 1,
+    "speed": 1,
+    "level": 15,
+    "hp": 1200,
+    "rangeMove": 50,
+    "imgs": [
+      3054,
+      3055,
+      3056,
+      3057,
+      3058,
+      3059,
+      3060,
+      3061,
+      3062
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 18,
+    "name": "Lính đầu gấu",
+    "type": 1,
+    "speed": 1,
+    "level": 15,
+    "hp": 1200,
+    "rangeMove": 50,
+    "imgs": [
+      3027,
+      3028,
+      3029,
+      3030,
+      3031,
+      3032,
+      3033,
+      3034,
+      3035
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 19,
+    "name": "Lính hổ",
+    "type": 1,
+    "speed": 1,
+    "level": 15,
+    "hp": 1200,
+    "rangeMove": 50,
+    "imgs": [
+      3045,
+      3046,
+      3047,
+      3048,
+      3049,
+      3050,
+      3051,
+      3052,
+      3053
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+    {
+        "id": 20,
+        "name": "Máy bay Red Ribbon",
+        "type": 2,
+        "speed": 1,
+        "level": 15,
+        "hp": 1200,
+        "rangeMove": 50,
+        "imgs": [
+          3018,
+          3019,
+          3020,
+          3021,
+          3022,
+          3023,
+          3024,
+          3025,
+          3026
+        ],
+        "dart": {
+          "dx": 0,
+          "dy": 0,
+          "startDarts": [],
+          "midDarts": [
+            289,
+            290
+          ],
+          "endDarts": []
+        }
+      },
+
+
+
+      {
+        "id": 21,
+        "name": "Robot Red Ribbon",
+        "type": 2,
+        "speed": 1,
+        "level": 15,
+        "hp": 1200,
+        "rangeMove": 50,
+        "imgs": [
+          3072,
+          3073,
+          3074,
+          3075,
+          3076,
+          3077,
+          3078,
+          3079,
+          3080
+        ],
+        "dart": {
+          "dx": 0,
+          "dy": 0,
+          "startDarts": [],
+          "midDarts": [
+            289,
+            290
+          ],
+          "endDarts": []
+        }
+      },
+
+
+
+
+      {
+          "id": 22,
+          "name": "Buyon",
+          "type": 1,
+          "speed": 1,
+          "level": 15,
+          "hp": 1200,
+          "rangeMove": 50,
+          "imgs": [
+            3000,
+            3001,
+            3002,
+            3003,
+            3004,
+            3004,
+            3006,
+            3007,
+            3008
+          ],
+          "dart": {
+            "dx": 0,
+            "dy": 0,
+            "startDarts": [],
+            "midDarts": [
+              289,
+              290
+            ],
+            "endDarts": []
+          }
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": 23,
+    "name": "Piano",
+    "type": 1,
+    "speed": 1,
+    "level": 13,
+    "hp": 300,
+    "rangeMove": 50,
+    "imgs": [
+      459,
+      460,
+      461,
+      462,
+      463,
+      464,
+      465,
+      466,
+      467
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 24,
+    "name": "Tambourine",
+    "type": 2,
+    "speed": 1,
+    "level": 14,
+    "hp": 1000,
+    "rangeMove": 50,
+    "imgs": [
+      750,
+      751,
+      752,
+      753,
+      754,
+      755,
+      756,
+      757,
+      758
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+  {
+    "id": 25,
+    "name": "Cymbal",
+    "type": 1,
+    "speed": 1,
+    "level": 15,
+    "hp": 1200,
+    "rangeMove": 50,
+    "imgs": [
+      723,
+      724,
+      725,
+      726,
+      727,
+      728,
+      729,
+      730,
+      731
+    ],
+    "dart": {
+      "dx": 0,
+      "dy": 0,
+      "startDarts": [],
+      "midDarts": [
+        289,
+        290
+      ],
+      "endDarts": []
+    }
+  },
+      {
+          "id": 26,
+          "name": "Drum",
+          "type": 1,
+          "speed": 1,
+          "level": 15,
+          "hp": 1200,
+          "rangeMove": 50,
+          "imgs": [
+          3009,
+          3010,
+          3011,
+          3012,
+          3013,
+          3014,
+          3015,
+          3016,
+          3017
+          ],
+          "dart": {
+            "dx": 0,
+            "dy": 0,
+            "startDarts": [],
+            "midDarts": [
+              289,
+              290
+            ],
+            "endDarts": []
+          }
+        },
+          {
+            "id": 27,
+            "name": "Hổ tướng cướp",
+            "type": 1,
+            "speed": 1,
+            "level": 10,
+            "hp": 300,
+            "rangeMove": 100,
+            "imgs": [
+              432,
+              433,
+              434,
+              435,
+              436,
+              437,
+              438,
+              439,
+              440
+            ],
+            "dart": {
+              "dx": 0,
+              "dy": 0,
+              "startDarts": [],
+              "midDarts": [
+                289,
+                290
+              ],
+              "endDarts": []
+            }
+          },
+          {
+            "id": 28,
+            "name": "Hổ tướng cướp",
+            "type": 1,
+            "speed": 1,
+            "level": 10,
+            "hp": 300,
+            "rangeMove": 100,
+            "imgs": [
+              432,
+              433,
+              434,
+              435,
+              436,
+              437,
+              438,
+              439,
+              440
+            ],
+            "dart": {
+              "dx": 0,
+              "dy": 0,
+              "startDarts": [],
+              "midDarts": [
+                289,
+                290
+              ],
+              "endDarts": []
+            }
+          }
+]

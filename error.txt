@@ -1,0 +1,3 @@
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Assets.Scripts.Commons.PlayerUtil.loadJson (System.String filename) [0x00000] in D:\test\Assets\Scripts\Commons\PlayerUtil.cs:32 
+  at Assets.Scripts.Games.GameCanvas.loadJson () [0x00043] in D:\test\Assets\Scripts\Games\GameCanvas.cs:102 
