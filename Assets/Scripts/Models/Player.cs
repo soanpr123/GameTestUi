@@ -320,7 +320,7 @@ namespace Assets.Scripts.Models
                     }
                     else
                     {
-                      
+
                         if (!(status == PlayerStatus.run))
                         {
                             return;
@@ -585,7 +585,7 @@ namespace Assets.Scripts.Models
             if ((this.x <= 50 && this.cvx < 0) || (this.x > TileMap.pixelX - 50 - Math.Abs(this.cvx) && this.cvx > 0))
 
             {
-                // this.\uE008(\uE017.\uE000(36388));
+
                 this.setStatus(PlayerStatus.fall);
                 this.cvx = 0;
                 this.cvy = 5;
@@ -769,8 +769,10 @@ namespace Assets.Scripts.Models
                     this.cvx = num;
             }
             this.cvy++;
-            if (this.cvy > 8)
-                this.cvy = 8;
+            if (this.cvy > this.speed * 3 / 2)
+            {
+                this.cvy = this.speed * 3 / 2;
+            }
             this.y += this.cvy;
             while (this.checkWallbonus(-1))
 
