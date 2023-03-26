@@ -33,6 +33,9 @@ namespace Assets.Scripts.Games
         public static int gameTick;
         public static int w;
         public static int h;
+        public static int hw;
+
+        public static int hh;
         public static Image imgLoading;
         public static Image imgMenu;
         public static Image imageFlare;
@@ -68,13 +71,17 @@ namespace Assets.Scripts.Games
         // public static List<SkillOptionJson> skillOptionJsons;
         // public static PanelScr panel;
 
-        static GameCanvas()
+        public GameCanvas()
         {
             // GameCanvas.paintz = new Paint();
             // GameCanvas.menu = new Menu();
+
+            GameCanvas.w = (int)ScaleGUI.WIDTH;
+            GameCanvas.h = (int)ScaleGUI.HEIGHT;
+            GameCanvas.hw = w / 2;
+            GameCanvas.hh = h / 2;
+            Debug.Log("GameCanvas.w" + GameCanvas.w);
             GameCanvas.currentScreen = GameScr.gI();
-            GameCanvas.w = Screen.width;
-            GameCanvas.h = Screen.height;
             // GameCanvas.panel = new PanelScr();
             // GameCanvas.imgLoading = GameCanvas.loadImage("loading.png");
             // GameCanvas.imgMenu = GameCanvas.loadImage("myTexture2dmenu.png");
@@ -92,6 +99,7 @@ namespace Assets.Scripts.Games
             if (numArray == null)
                 return;
             GameCanvas.versionItemClient = numArray[0];
+
         }
 
         public static void loadJson()
@@ -99,9 +107,9 @@ namespace Assets.Scripts.Games
             try
             {
 
-             
+
                 // GameCanvas.parts = JsonConvert.DeserializeObject<Dictionary<int, Part>>(File.ReadAllText("Player//Part.json"));
-               
+
                 // GameCanvas.skillPaints = JsonMapper.ToObject<SkillPaint[]>(PlayerUtil.loadJson("SkillPaint"));
                 // GameCanvas.npcTemplates = JsonMapper.ToObject<List<NpcTemplate>>(PlayerUtil.loadJson("Npc"));
                 // GameCanvas.mapTemplates = JsonMapper.ToObject<List<MapTemplate>>(PlayerUtil.loadJson("Maps"));
@@ -308,18 +316,18 @@ namespace Assets.Scripts.Games
             // {
             //     if (GameCanvas.currentScreen == null)
             //         return;
-            Debug.Log("pointerReleased:X " + x + "pointerReleased: " + y);
+
             GameCanvas.currentScreen.pointerReleased(x, y);
             // }
         }
         public static void pointerDragged(int x, int y)
         {
-            Debug.Log("pointerDragged:X " + x + "pointerDragged: " + y);
+
             GameCanvas.currentScreen.pointerDragged(x, y);
         }
         public static void pointerClicked(int x, int y)
         {
-            Debug.Log("pointerClicked:X " + x + "pointerClickedY: " + y);
+
             // if (GameCanvas.dialog.isShow)
             //     GameCanvas.dialog.pointerClicked(x, y);
             // else if (GameCanvas.menu.isShow)
@@ -350,7 +358,7 @@ namespace Assets.Scripts.Games
             // {
             //     if (GameCanvas.currentScreen == null)
             //         return;
-           
+
             GameCanvas.currentScreen.pointerMove(x, y);
             // }
         }

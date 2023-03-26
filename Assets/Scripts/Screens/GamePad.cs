@@ -93,18 +93,18 @@ namespace Assets.Scripts.Screens
             if (!isLargeGamePad)
             {
                 xZone = 0;
-                wZone = GameCanvas.w / 2;
-                yZone = (GameCanvas.h / 2) >> 1;
+                wZone = GameCanvas.hw;
+                yZone = GameCanvas.hh >> 1;
                 hZone = GameCanvas.h - 80;
             }
             else
             {
                 xZone = 0;
-                wZone = (GameCanvas.w / 2) / 4 * 3 - 20;
-                yZone = (GameCanvas.h / 2) >> 1;
+                wZone = GameCanvas.hw / 4 * 3 - 20;
+                yZone = GameCanvas.hh >> 1;
                 hZone = GameCanvas.h;
             }
-
+            Debug.Log("GameCanvas.w" + GameCanvas.w + "isLargeGamePad: " + isLargeGamePad + "xZone: " + xZone + " wZone: " + wZone + " yZone: " + yZone + " yZone: " + hZone);
         }
         public void update()
         {
@@ -112,6 +112,7 @@ namespace Assets.Scripts.Screens
             // {
             //     return;
             // }
+
             if (GameScr.isPointerDown && !GameScr.isPointerJustRelease)
             {
                 xTemp = GameScr.pxFirst;
@@ -120,6 +121,7 @@ namespace Assets.Scripts.Screens
                 {
                     return;
                 }
+                Debug.Log("isPointerDown: " + GameScr.isPointerDown + " isPointerJustRelease: " + !GameScr.isPointerJustRelease);
                 if (!isGamePad)
                 {
                     xC = (xM = xTemp);
@@ -166,6 +168,7 @@ namespace Assets.Scripts.Screens
                     yM = GameScr.py;
                 }
                 resetHold();
+                Debug.Log("checkPointerMove: " + checkPointerMove(2));
                 if (checkPointerMove(2))
                 {
                     if ((angle <= 360 && angle >= 340) || (angle >= 0 && angle <= 20))
@@ -240,6 +243,7 @@ namespace Assets.Scripts.Screens
                 isGamePad = false;
                 resetHold();
             }
+
         }
         private bool checkPointerMove(int distance)
         {
@@ -247,9 +251,11 @@ namespace Assets.Scripts.Screens
             // {
             //     return false;
             // }
+            bool flag1 = true;
             if (Player.me.status == PlayerStatus.jump)
             {
-                return true;
+                flag1 = true;
+                return flag1;
             }
             try
             {
@@ -259,7 +265,8 @@ namespace Assets.Scripts.Screens
                     int i2 = GameScr.arrPos[num].y - GameScr.arrPos[num - 1].y;
                     if (PlayerUtil.abs(i) > distance && PlayerUtil.abs(i2) > distance)
                     {
-                        return false;
+                        flag1 = false;
+                        return flag1;
                     }
                 }
             }
@@ -267,7 +274,8 @@ namespace Assets.Scripts.Screens
             {
                 Debug.Log(ex.ToString());
             }
-            return true;
+
+            return flag1;
         }
         private void resetHold()
         {

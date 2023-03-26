@@ -29,7 +29,7 @@ public class Main : MonoBehaviour
 
     // Token: 0x04000007 RID: 7
     public static MyGraphics g;
-
+    public static GameCanvas gameCanvas;
 
     // Token: 0x04000008 RID: 8
     public static int f;
@@ -143,13 +143,16 @@ public class Main : MonoBehaviour
                 Main.main = this;
             }
             Main.isRun = true;
+            ScaleGUI.initScaleGUI();
             bool flag3 = Main.isPC;
             if (flag3)
             {
                 Screen.fullScreen = false;
             }
+
+            g = new MyGraphics();
+            gameCanvas = new GameCanvas();
             GameCanvas.loadJson();
-            Main.g = new MyGraphics();
             // Main.g.CreateLineMaterial();
         }
     }

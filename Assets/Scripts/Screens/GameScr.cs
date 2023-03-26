@@ -399,7 +399,7 @@ namespace Assets.Scripts.Screens
             pyLast = y;
             px = x;
             py = y;
-            Debug.Log("pointerDounw: " + isPointerDown);
+           
         }
 
         public static bool isPointerHoldIn(int x, int y, int w, int h)
@@ -439,8 +439,7 @@ namespace Assets.Scripts.Screens
             isPointerMove = false;
             MyScreen.keyTouch = -1;
             px = x;
-            py = y;
-            Debug.Log("isPointerJustRelease" + isPointerJustRelease);
+            py = y; 
         }
 
         public override void pointerMove(int x, int y)

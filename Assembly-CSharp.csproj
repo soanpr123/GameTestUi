@@ -42,10 +42,13 @@
      <Compile Include="Assets\Scripts\GraphicCustoms\MyGraphics.cs" />
      <Compile Include="Assets\Scripts\Models\StaticObj.cs" />
      <Compile Include="Assets\Scripts\Dialogs\Command.cs" />
+     <Compile Include="Assets\Scripts\Commons\LogFile.cs" />
      <Compile Include="Assets\Scripts\Commons\PlayerUtil.cs" />
      <Compile Include="Assets\Scripts\Models\SmallImage.cs" />
      <Compile Include="Assets\Scripts\IOs\DataInputStream.cs" />
      <Compile Include="Assets\Scripts\Actions\IChatable.cs" />
+     <Compile Include="Assets\Scripts\Screens\GamePad.cs" />
+     <Compile Include="Assets\Scripts\Models\Position.cs" />
      <Compile Include="Assets\Scripts\Actions\IActionListener.cs" />
      <Compile Include="Assets\Scripts\Models\MapObject.cs" />
      <Compile Include="Assets\Scripts\Screens\MyScreen.cs" />
@@ -64,11 +67,10 @@
      <Compile Include="Assets\Scripts\Commons\MyRandom.cs" />
      <Compile Include="Assets\Scripts\GraphicCustoms\MyFont.cs" />
      <Compile Include="Assets\Scripts\Models\MapTemplate.cs" />
-     <Compile Include="Assets\Scripts\GraphicCustoms\Image.cs" />
-     <Compile Include="Assets\Scripts\Commons\LogFile.cs" />
-     <Compile Include="Assets\Scripts\Screens\GamePad.cs" />
-     <Compile Include="Assets\Scripts\Models\Position.cs" />
      <Compile Include="Assets\Scripts\Models\Layer.cs" />
+     <Compile Include="Assets\Scripts\GraphicCustoms\Image.cs" />
+     <Compile Include="Assets\Scripts\GraphicCustoms\ScaleGUI.cs" />
+     <Compile Include="Assets\Scripts\IOs\Cout.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
