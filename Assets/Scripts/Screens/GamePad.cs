@@ -71,7 +71,7 @@ namespace Assets.Scripts.Screens
 
         public GamePad()
         {
-            R = 28;
+            R = 50;
             if (GameCanvas.w < 300)
             {
                 isSmallGamePad = true;
@@ -121,13 +121,14 @@ namespace Assets.Scripts.Screens
                 {
                     return;
                 }
-                Debug.Log("isPointerDown: " + GameScr.isPointerDown + " isPointerJustRelease: " + !GameScr.isPointerJustRelease);
+
                 if (!isGamePad)
                 {
                     xC = (xM = xTemp);
                     yC = (yM = yTemp);
                 }
                 isGamePad = true;
+                Debug.Log("isGamePad: " + isGamePad);
                 deltaX = GameScr.px - xC;
                 deltaY = GameScr.py - yC;
                 delta = PlayerUtil.pow(deltaX, 2) + PlayerUtil.pow(deltaY, 2);
@@ -173,7 +174,10 @@ namespace Assets.Scripts.Screens
                 {
                     if ((angle <= 360 && angle >= 340) || (angle >= 0 && angle <= 20))
                     {
-                        Debug.Log("1");
+                        // Debug.Log("1");
+                        // Player.me.currentMovePoint = (MovePoint)null;
+                        // Player.isMoveLeft = false;
+                        // Player.isMoveRight = true;
                         // GameScr.keyHold[(!Main.isPC) ? 6 : 24] = true;
                         // GameScr.keyPressed[(!Main.isPC) ? 6 : 24] = true;
                     }
@@ -185,43 +189,50 @@ namespace Assets.Scripts.Screens
                     }
                     else if (angle >= 70 && angle <= 110)
                     {
-                        Debug.Log("3");
-                        // GameScr.keyHold[(!Main.isPC) ? 8 : 22] = true;
-                        // GameScr.keyPressed[(!Main.isPC) ? 8 : 22] = true;
+                        // Debug.Log("3");
+                        // Player.me.currentMovePoint = (MovePoint)null;
+                        // Player.isMoveDown = true;
+                        // Player.me.setStatus(PlayerStatus.run);
                     }
                     else if (angle > 110 && angle < 120)
                     {
-                        Debug.Log("4");
-                        // GameScr.keyHold[(!Main.isPC) ? 4 : 23] = true;
-                        // GameScr.keyPressed[(!Main.isPC) ? 4 : 23] = true;
+                        // Debug.Log("4");
+                        // Player.me.currentMovePoint = (MovePoint)null;
+                        // Player.isMoveRight = false;
+                        // Player.isMoveLeft = true;
+                        // Player.me.setStatus(PlayerStatus.run);
                     }
                     else if (angle >= 120 && angle <= 200)
                     {
-                        Debug.Log("5");
-                        // GameScr.keyHold[(!Main.isPC) ? 4 : 23] = true;
-                        // GameScr.keyPressed[(!Main.isPC) ? 4 : 23] = true;
+                        // Debug.Log("5");
+                        // Player.me.currentMovePoint = (MovePoint)null;
+                        // Player.isMoveRight = false;
+                        // Player.isMoveLeft = true;
+                        // Player.me.setStatus(PlayerStatus.run);
                     }
                     else if (angle > 200 && angle < 250)
                     {
-                        Debug.Log("6");
-                        // GameScr.keyHold[(!Main.isPC) ? 2 : 21] = true;
-                        // GameScr.keyPressed[(!Main.isPC) ? 2 : 21] = true;
-                        // GameScr.keyHold[(!Main.isPC) ? 4 : 23] = true;
-                        // GameScr.keyPressed[(!Main.isPC) ? 4 : 23] = true;
+                        // Debug.Log("6");
+                        // Player.me.currentMovePoint = (MovePoint)null;
+                        // Player.isMoveDown = false;
+                        // Player.isMoveUp = true;
+                        // Player.me.setStatus(PlayerStatus.run);
                     }
                     else if (angle >= 250 && angle <= 290)
                     {
-                        Debug.Log("7");
-                        // GameScr.keyHold[(!Main.isPC) ? 2 : 21] = true;
-                        // GameScr.keyPressed[(!Main.isPC) ? 2 : 21] = true;
+                        // Debug.Log("7");
+                        // Player.me.currentMovePoint = (MovePoint)null;
+                        // Player.isMoveDown = false;
+                        // Player.isMoveUp = true;
+                        // Player.me.setStatus(PlayerStatus.jump);
                     }
                     else if (angle > 290 && angle < 340)
                     {
-                        Debug.Log("8");
-                        // GameScr.keyHold[(!Main.isPC) ? 2 : 21] = true;
-                        // GameScr.keyPressed[(!Main.isPC) ? 2 : 21] = true;
-                        // GameScr.keyHold[(!Main.isPC) ? 6 : 24] = true;
-                        // GameScr.keyPressed[(!Main.isPC) ? 6 : 24] = true;
+                        // Debug.Log("8");
+                        // Player.me.currentMovePoint = (MovePoint)null;
+                        // Player.isMoveDown = false;
+                        // Player.isMoveUp = true;
+                        // Player.me.setStatus(PlayerStatus.jump);
                     }
                 }
                 else
@@ -231,14 +242,14 @@ namespace Assets.Scripts.Screens
             }
             else
             {
-                xM = (xC = 45);
+                xM = (xC = 100);
                 if (!isLargeGamePad)
                 {
-                    yM = (yC = GameCanvas.h - 90);
+                    yM = (yC = GameCanvas.h - 100);
                 }
                 else
                 {
-                    yM = (yC = GameCanvas.h - 45);
+                    yM = (yC = GameCanvas.h - 100);
                 }
                 isGamePad = false;
                 resetHold();
